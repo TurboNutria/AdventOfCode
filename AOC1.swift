@@ -7,10 +7,6 @@ var caloriesList: [Int] = []
 
 let chunks: [ArraySlice] = text
     .components(separatedBy: .newlines)
-    .reversed()
-    .enumerated()
-    .map { $0.element }
-    .reversed()
     .split(separator: "")
 
 for i in chunks {
